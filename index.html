@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Café de la Place</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Le Stock du Café de la Place</h1>
+    </header>
+
+    <main>
+      <section class="form">
+        <fieldset>
+          <input type="hidden" id="identifiant-produit" />
+          <label>
+            <p>Nom du produit</p>
+            <input id="nom-produit" type="text" />
+          </label>
+          <label>
+            <p>Type</p>
+            <select id="type-produit">
+              <option></option>
+              <option value="Boisson alcoolisée">Boisson alcoolisée</option>
+              <option value="Boisson non alcoolisée">
+                Boisson non alcoolisée
+              </option>
+              <option value="Autre">Autre</option>
+            </select>
+          </label>
+
+          <label title="Boissons alcoolisées uniquement">
+            <p>Degré d'alcool</p>
+
+            <input type="number" id="degre-alcool" min="1" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>
+            <p>Prix d'achat HT</p>
+            <input id="achat-HT" type="number" min="0" />
+          </label>
+          <label>
+            <p>Prix de vente HT</p>
+            <input id="vente-HT" type="number" min="0" />
+          </label>
+        </fieldset>
+
+        <div>
+          <button id="valider-produit">
+            Ajouter le nouveau produit au stock
+          </button>
+        </div>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Type (degrés)</th>
+            <th>Quantité</th>
+            <th>Prix d'achat HT</th>
+            <th>Prix de vente HT</th>
+            <th>Marge HT</th>
+            <th>Prix de vente TTC</th>
+            <th colspan="2"><u>Gérer l'inventaire</u></th>
+          </tr>
+        </thead>
+        <tbody id="stock-table"></tbody>
+      </table>
+    </main>
+
+    <script src="./lib/factory.js"></script>
+    <script src="./lib/Produit.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
