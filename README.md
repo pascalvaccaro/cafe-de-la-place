@@ -15,12 +15,12 @@
     - Degré d'alcool (uniquement pour les alcools)
 
 2. L'utilisateur doit pouvoir consulter la liste des produits avec toutes leurs informations. 
-3. L’utilisateur doit pouvoir décrémenter ou incrémenter le niveau de stock de chaque produit (ATTENTION: un stock ne peut pas être négatif)
-4. L'utilisateur doit pouvoir modifier les caractéristiques d'un produit 
-5. L’utilisateur doit pouvoir supprimer un produit du stock
-6. Le niveau du stock d’un produit doit être représenté par un code couleur sur la page, notamment dans le cas où le stock est dangereusement bas !
+3. Le stock doit être sauvegardé en localstorage et récupéré lors du chargement de la page pour conserver les informations.
+4. L’utilisateur doit pouvoir décrémenter ou incrémenter le niveau de stock de chaque produit (ATTENTION: un stock ne peut pas être négatif)
+5. L'utilisateur doit pouvoir modifier les caractéristiques d'un produit 
+6. L’utilisateur doit pouvoir supprimer un produit du stock
+7. Le niveau du stock d’un produit doit être représenté par un code couleur sur la page, notamment dans le cas où le stock est dangereusement bas !
 
 ## BONUS
 
-- Le stock doit être sauvegardé en localstorage et récupéré lors du chargement de la page pour conserver les informations.
 - Générer un QRCode pour chaque produit contenant sa référence.
