@@ -2,15 +2,23 @@
 * {
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  background: url(https://marseille.love-spots.com/wp-content/uploads/2019/08/BeauRivage_Cafe-Bar-Restaurant_Vieux-Port_Marseille_Love-spots_02-1280x768.jpg);
+  background-size: cover; 
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 6rem 3rem;
 }
 header {
   text-align: center;
+  color: white;
 }
 section {
   padding: 1rem;
@@ -121,4 +129,17 @@ table button {
 .btn-quantity {
   background-color: lightgray;
   border-color: lightgray;
+}
+
+
+#qrcode {
+  display: none;
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 200px);
+  background-color: white;
+  border: 1px solid black;
+  padding: 1rem;
 }
